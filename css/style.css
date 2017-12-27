@@ -2,24 +2,38 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Quicksand";
+  font-family: 'Quicksand', "sans-serif", "veranda";
   color: white;
 }
 
 h1 { 
-  font-size: 5em;
+  font-size: 4em;
+  font-family: 'Oswald', 'Quicksand', "sans-serif";
 }
 
-span {
-  margin: auto;
+a {
+  color: #D4826A;
+  transition: color 2s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 /* NAVIGATION */
 
-.nav {
-  font-size: 1.7em;
-  color: black;
-  background-color: #78655f;
+.navbar-default, .navbar-brand {
+  background-color: white;
+  font-size: 1.5em;
+}
+
+.navbar.navbar-default li a, .navbar.navbar-default a {
+  color: #113B51;
+}
+
+.navbar.navbar-default li a:hover, .navbar.navbar-default a:hover {
+  color: #113B51;
 }
 
 /* PAGES */
@@ -30,56 +44,108 @@ span {
 }
 
 #aboutMePage {
-  height: 110%;
-  background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/DSC03078.jpg?w=2210&quality=50");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-  margin-top: -10%;
+  height: 80%;
+  min-height: 80%;
+  overflow: hidden;
+  background-color: #113B51;
 }
 
 #aboutMeContainer {
-  width: 60%;
-  height: 100%;
-  padding: 1em;
+  width: 80%;
   margin: auto;
+  margin-top: 12em;
+  color: #D4826A;
 }
 
-#aboutMeBlock {
-  padding: 1.4em;
-  margin-top: 15em;
-  border-radius: 1%;
+.icon {
+  color: white;
+  transition: color 2s;
 }
 
-.coffeeScroll {
-  height: 25%;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+.icon:hover {
+  color: #D4826A;
 }
 
-#coffeeScroll {
-  background-image: url("https://blackandwhiteandinlivingcolor.files.wordpress.com/2015/09/chemex-2.jpg");
+h3 {
+  color: white;
 }
 
-#coffeeScrollTwo {
-  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/HmIzqHc4eix1fym01/videoblocks-cup-of-coffee-on-a-white-background-with-rotation-top-view_swzbj_pcg_thumbnail-full01.png");
+#planet {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  margin: auto;
+  background-color: #032436;
+  border-radius: 50%;
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+#moon {
+  postition: absolute;
+  height: 1em;
+  width: 1em;
+  background-color: #6F90A2;
+  border-radius: 50%;
+  margin: 4em;
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+#mission {
+  background-color: #D4826A;
+  color: #032436;
+  padding: 1em;
+}
+
+#mission p {
+  color: #113B51;
+  font-size: 2em;
+  width: 60%;
+  margin: auto;
+  padding: 1em;
+}
+
+#profpic {
+  height: 20em;
+  width: 16em;
+  border-radius: 1em;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.1em;
+  padding: 0;
 }
 
 #awardsPage {
-  height: 20%;
-  background-color: #5b5551;
+  background-color: #FFE8AA;
 }
 
 #portfolioPage {
-  height: 100%;
-  background-color: #9b8d7a;
+  background-color: #113B51;
+  padding: 4em;
+  color: #D4826A;
+}
+
+#portfolioPage p {
+  margin: 1em;
 }
 
 #contactMePage {
-  height: 40%;
-  background-color: #675854;
+  background-color: #477187;
+  padding: 2em;
+}
+
+#contactMePage h1 {
+  color: #D4826A;
+}
+
+#contactText {
+  background-color: black;
+  width: 20em;
+}
+
+#contactMePage {
+  margin: auto;
 }
 
 .btn-default {
@@ -88,7 +154,21 @@ span {
 
 /* BADGES */
 
-.badge {
-  height: 80%;
+.award {
+  height: 10em;
+  width: 10em;
   margin: auto;
+  margin: 1em;
+  margin-top: 0;
+}
+
+/*-- animation --*/
+@-webkit-keyframes spin {
+ 100% {
+   -webkit-transform: rotate(360deg);
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg);
+ }
 }

@@ -1,64 +1,84 @@
-<header>
-   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+<header> 
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Quicksand" rel="stylesheet"> 
   <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/javascript.js"></script>
 </header>
 <body class="text-center"> 
-  
   <!-- navigation -->
-  <div>
-    <ul class="nav nav-pills">
-     <li><a href="#">Derek Fermaint</a></li>
-     <li class="pull-right"><a href="#contactMePage">Contact Me</a></li>
-     <li class="pull-right"><a href="#portfolioPage">Portfolio</a></li>
-     <li class="pull-right"><a href="#aboutMePage">About Me</a></li>
-   </ul>
-  </div>
-  
-  <!-- about me page -->
-  <div class="page" id="aboutMePage">
-    <div class="text-center" id="aboutMeContainer">
-      <div class="block" id="aboutMeBlock">
-        <h1 class="text-muted">Derek Fermaint</h1>
-        <h3>Software Engineer & Developer</h3>
-        <a class="btn btn-default" href="https://www.instagram.com/dataspective/"><i class="fab fa-instagram"></i> Instagram</a>
-        <a class="btn btn-default" href="https://www.linkedin.com/in/derekfermaint"><i class="fab fa-linkedin"></i> Linked In</a>
-        <a class="btn btn-default" href="https://github.com/dataspective"><i class="fab fa-github-alt"></i> Github</a>
-        <a class="btn btn-default" href="https://www.freecodecamp.org/dataspective"><i class="fab fa-free-code-camp"></i> freeCodeCamp</a>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <span class="navbar-brand">Derek Fermaint</span>
       </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="navHome"><a href="#aboutMePage">Home</a></li>
+        <li id="navPortfolio"><a href="#awardsPage">Portfolio</a></li>
+        <li class="active" id="navContact"><a href="#contactMePage">Contact Me</a></li>
+      </ul>
+    </div>    
+  </nav>
+  <!-- about me page -->
+  <div class="container-fluid page" id="aboutMePage">
+    <div class="row text-center" id="aboutMeContainer">
+      <div>
+        <div id="planet"><div id="moon"></div></div>
+        <h1>Derek Fermaint</h1>
+        <h3>Software Engineering & Mathematics</h3>
+      </div>
+      <div>
+        <h3><a class="icon" href="https://www.instagram.com/dataspective/" target="blank"><i class="fab fa-instagram"></i></a>
+        <a class="icon" href="https://www.linkedin.com/in/derekfermaint" target="blank"><i class="fab fa-linkedin"></i></a>
+        <a class="icon" href="https://github.com/dataspective" target="blank"><i class="fab fa-github-alt"></i></a>
+        <a class="icon" href="https://www.freecodecamp.org/dataspective" target="blank"><i class="fab fa-free-code-camp"></i></a></h3>
+      </div>       
     </div>
   </div>
   
-  <!-- coffee scroll -->
-  <div class="page coffeeScroll" id="coffeeScroll">
-    <span> </span>
+  <!-- mission statement -->
+  <div class="page container-fluid" id="mission">
+    <p>Learning new things every day & applying them in ways that adds value to those around me.</p>
   </div>
   
   <!-- awards page -->
   <div class="page text-center" id="awardsPage">
-    <span>
       <!-- jack kent cooke badge -->
-      <img src="https://credlyapp.s3.amazonaws.com/badges/7862993720f8995e1d58c4b4ec0da8ce_15.png" class="badge">
-    </span>
+      <img src="https://credlyapp.s3.amazonaws.com/badges/7862993720f8995e1d58c4b4ec0da8ce_15.png" class="award" alt="JKCF Badge"/>
   </div>
   
   <!-- portfolio page -->
   <div class="page" id="portfolioPage">
     <h1>Portfolio</h1>
-    <p>Under construction</p>
-    <img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/1646299.goPpGX.small.b2ed1d74-db6e-4810-a645-33ba64ee03e8.png">
-  </div>
-  
-  <!-- coffee scroll 2 -->
-  <div class="page coffeeScroll" id="coffeeScrollTwo">
-    <span> </span>
+    <!-- carl sagan quote generator -->
+    <p data-height="265" data-theme-id="0" data-slug-hash="aEZRGM" data-default-tab="js,result" data-user="dataspective" data-embed-version="2" data-pen-title="carl_sagan_quote_generator" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/dataspective/pen/aEZRGM/">carl_sagan_quote_generator</a> by Derek Fermaint (<a href="https://codepen.io/dataspective">@dataspective</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    <!-- weather app -->
+    <p data-height="265" data-theme-id="0" data-slug-hash="WdGpXe" data-default-tab="js,result" data-user="dataspective" data-embed-version="2" data-pen-title="Weather Application" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/dataspective/pen/WdGpXe/">Weather Application</a> by Derek Fermaint (<a href="https://codepen.io/dataspective">@dataspective</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    <!-- wikipedia viewer -->
+    <p data-height="265" data-theme-id="0" data-slug-hash="opzrGb" data-default-tab="js,result" data-user="dataspective" data-embed-version="2" data-pen-title="Wikipedia_viewer" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/dataspective/pen/opzrGb/">Wikipedia_viewer</a> by Derek Fermaint (<a href="https://codepen.io/dataspective">@dataspective</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    <p> For other programs written in C++, Java and Python please view my github <a href="https://github.com/dataspective" target="blank">here</a>. 
   </div>
   
   <!-- contact me page -->
-  <div class="page" id="contactMePage">
-    <h1>Contact Me</h1>
-    <h3>The best method to contact me is via <a href="mailto:fermaint.derek@gmail.com">email</a>.</h3>
+  <div class="page container-fluid" id="contactMePage">
+    <div class="row">
+      <h1>Contact Me</h1>
+      <h3>The best method is <a href="mailto:fermaint.derek@gmail.com">email</a>. You can also find me ony of these other places.</h3></div>
+      <h2><a href="https://medium.com/@derekfermaint" target="blank"><i class="fab fa-medium" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/derekfermaint" target="blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/theghostleaf" target="blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/dataspective/" target="blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/user/DKBRUTAL/featured?view_as=subscriber" target="blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://github.com/dataspective" target="blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.freecodecamp.org/dataspective" target="blank"><i class="fab fa-free-code-camp"></i></a></h2>
+      </div>
+    </div>
   </div>
-
-  
 </body>
