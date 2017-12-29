@@ -9,16 +9,17 @@ body {
 h1 { 
   font-size: 4em;
   font-family: 'Oswald', 'Quicksand', "sans-serif";
+  color: #6F90A2;
 }
 
 a {
-  color: #D4826A;
+  color: #FFF;
   transition: color 2s;
 }
 
 a:hover {
   text-decoration: none;
-  color: white;
+  color: #D4826A;
 }
 
 /* NAVIGATION */
@@ -54,7 +55,7 @@ a:hover {
   width: 80%;
   margin: auto;
   margin-top: 12em;
-  color: #D4826A;
+  color: #6F90A2;
 }
 
 .icon {
@@ -93,7 +94,7 @@ h3 {
 }
 
 #mission {
-  background-color: #D4826A;
+  background-color: #6F90A2;
   color: #032436;
   padding: 1em;
 }
@@ -106,24 +107,14 @@ h3 {
   padding: 1em;
 }
 
-#profpic {
-  height: 20em;
-  width: 16em;
-  border-radius: 1em;
-  border-color: white;
-  border-style: solid;
-  border-width: 0.1em;
-  padding: 0;
-}
-
 #awardsPage {
-  background-color: #FFE8AA;
+  background-color: #FFF;
 }
 
 #portfolioPage {
   background-color: #113B51;
   padding: 4em;
-  color: #D4826A;
+  color: #FFF;
 }
 
 #portfolioPage p {
@@ -135,21 +126,30 @@ h3 {
   padding: 2em;
 }
 
-#contactMePage h1 {
-  color: #D4826A;
-}
-
-#contactText {
-  background-color: black;
-  width: 20em;
-}
-
 #contactMePage {
   margin: auto;
 }
 
 .btn-default {
   border-color: none;
+}
+
+#tutorialPage {
+  padding: 4em;
+}
+
+.tutImg {
+  width: 60%;
+  height: auto;
+  border-radius: 1em;
+  border-color: #477187;
+  border-style: solid;
+  border-width: 0.1em;
+  transition: opacity 2s;
+}
+
+.tutImg:hover {
+  opacity: 0.6;
 }
 
 /* BADGES */

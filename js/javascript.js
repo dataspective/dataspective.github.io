@@ -2,21 +2,27 @@ $(document).ready(function(){
   
   $("#navHome").click(function(){
     $("li").removeClass("active");
-		$("#navHome").addClass("active");
+    $("#navHome").addClass("active");
   })
   
   $("#navContact").click(function(){
     $("li").removeClass("active");
-		$("#navContact").addClass("active");
+    $("#navContact").addClass("active");
   })
-	
-	$("#navPortfolio").click(function(){
+  
+  $("#navPortfolio").click(function(){
     $("li").removeClass("active");
-		$("#navPortfolio").addClass("active");
+    $("#navPortfolio").addClass("active");
   })
-	
-	$("#navAbout").click(function(){
+  
+  $("#navTutorials").click(function(){
     $("li").removeClass("active");
-		$("#navAbout").addClass("active");
+    $("#navTutorials").addClass("active");
   })
+  
+  $("#navAbout").click(function(){
+    $("li").removeClass("active");
+    $("#navAbout").addClass("active");
+  })
+  
 })
