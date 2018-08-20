@@ -22,7 +22,6 @@ a:hover {
 /* NAVIGATION */
 
 .navbar {
-  height: 3em;
   padding: 0.5em;
 }
 
@@ -161,7 +160,6 @@ a:hover {
   }
   .navbar.navbar-default li {
     text-align: center;
-    background-color: hsl(165, 50%, 32%);
   }
 
 }
