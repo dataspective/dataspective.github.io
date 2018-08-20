@@ -1,27 +1,30 @@
 html,
-body {
+main {
   width: 100%;
   height: 100%;
   font-family: 'Quicksand', "sans-serif", "veranda";
+  text-shadow: white, 1px, 1px, 1px, 1px, 1.0;
 }
-
-h1 { 
-  font-size: 4em;
+h1, h2 { 
   font-family: 'Oswald', 'Quicksand', "sans-serif";
-  color: white;
+  color: hsl(160, 30%, 80%);
 }
-
 a {
-  color: #FFF;
+  color: hsl(160, 50%, 70%);
   transition: color 2s;
 }
-
 a:hover {
   text-decoration: none;
   color: white;
+  transform: scale(1.1);
 }
 
 /* NAVIGATION */
+
+.navbar {
+  height: 3em;
+  padding: 0.5em;
+}
 
 .navbar-default, .navbar-brand {
   background-color: #1E201D;
@@ -36,90 +39,8 @@ a:hover {
   color: #85A985;
 }
 
-/* PAGES */
-
-.page {
-  padding-top: 2em;
-  margin: 0em;
-}
-
-#aboutMePage {
-  height: 80%;
-  min-height: 80%;
-  overflow: hidden;
-  background-image: url("img/background.jpeg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #113B51;
-}
-
-#aboutMeContainer {
-  width: 80%;
-  margin: auto;
-  margin-top: 20%;
-  color: #6F90A2;
-}
-
-.icon {
-  color: white;
-  transition: color 2s;
-}
-
-.icon:hover {
-  color: #D4826A;
-}
-
-h3 {
-  color: white;
-}
-
-#mission {
-  background-color: #5E885E;
-  padding: 1em;
-}
-
-#mission p {
-  font-size: 2em;
-  color: white;
-  width: 60%;
-  margin: auto;
-  padding: 1em;
-}
-
-#awardsPage {
-  background-color: #8B9F7A;
-}
-
-#portfolioPage {
-  background-color: #688180;
-  margin: auto;
-  padding: 4em;
-  color: #FFF;
-}
-
-#portfolioPage p {
-  height: 1em;
-}
-
-#contactMePage {
-  background-image: url("img/footer.jpeg");
-  background-size: 100%, 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #274E27;
-  margin: auto;
-  padding: 2em;
-  height: 40%;
-}
-
 .btn-default {
   border-color: none;
-}
-
-#tutorialPage {
-  background-color: #A5B9B8;
-  padding: 4em;
 }
 
 .tutImg {
@@ -134,6 +55,89 @@ h3 {
 
 .tutImg:hover {
   opacity: 0.6;
+  transform: scale(1.05);
+}
+
+.icon {
+  color: hsl(160, 20%, 50%);
+  -webkit-transition: color 2s, transform 3s;
+  transition: color 2s, transform 3s;
+}
+
+.icon:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* PAGES */
+
+.page {
+  min-width: 800px;
+  padding-top: 2em;
+  margin: 0em;
+}
+
+#aboutMePage {
+  height: 80%;
+  min-height: 80%;
+  overflow: hidden;
+  background-image: url("img/background.jpeg");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+#aboutMeContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 20%;
+  color: #6F90A2;
+}
+
+#mission {
+  background: linear-gradient(45deg, hsl(155, 20%, 52%), hsl(165, 60%, 52%));
+  padding: 1em;
+}
+
+#mission p {
+  font-size: 2em;
+  color: white;
+  width: 60%;
+  margin: auto;
+  padding: 1em;
+}
+
+#awardsPage {
+  background: linear-gradient(45deg, hsl(165, 50%, 52%), hsl(155, 20%, 52%));
+}
+
+#portfolioPage {
+  background: linear-gradient(45deg, hsl(155, 20%, 52%), hsl(165, 60%, 52%));
+  margin: auto;
+  padding: 4em;
+  color: white;
+}
+
+#portfolioPage p {
+  height: 1em;
+}
+
+#tutorialPage {
+  background: linear-gradient(45deg, hsl(165, 50%, 52%), hsl(155, 20%, 52%));
+  padding: 4em;
+  color: white;
+}
+
+#contactMePage {
+  width: 100%;
+  height: 40%;
+  min-height: 40%;
+  margin: auto;
+  padding: 4em;
+  color: white;
+  background: linear-gradient(45deg, hsl(155, 70%, 5%), hsl(165, 50%, 32%));
 }
 
 /* BADGES */
@@ -146,13 +150,18 @@ h3 {
   margin-top: 0;
 }
 
-/*-- animation --*/
-@-webkit-keyframes spin {
- 100% {
-   -webkit-transform: rotate(360deg);
-   -moz-transform: rotate(360deg);
-   -ms-transform: rotate(360deg);
-   -o-transform: rotate(360deg);
-   transform: rotate(360deg);
- }
+/* MEDIA */
+
+@media (max-width: 760px) {
+  #aboutMePage {
+    display: none;
+  }
+  #mission p{
+    margin-top: 200px;
+  }
+  .navbar.navbar-default li {
+    text-align: center;
+    background-color: hsl(165, 50%, 32%);
+  }
+
 }
