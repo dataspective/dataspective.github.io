@@ -1,3 +1,13 @@
+:root {
+  --main-text-color: #EEBB86;
+  --secondary-text-color: #49B091;
+  --third-text-color: #EEBB86;
+  --primary-background-color: #4A6376;
+  --secondary-background-color: #5B7E99;
+  --img-width: 20em;
+  --img-height: 20em;
+}
+
 html,
 main {
   width: 100%;
@@ -7,16 +17,16 @@ main {
 }
 h1, h2 { 
   font-family: 'Oswald', 'Quicksand', "sans-serif";
-  color: hsl(160, 30%, 80%);
+  color: var(--main-text-color);
 }
 a {
-  color: hsl(160, 50%, 70%);
+  color: var(--secondary-text-color);
   transition: color 2s;
 }
 a:hover {
   text-decoration: none;
-  color: white;
-  transform: scale(1.1);
+  color: var(--main-text-color);
+  transform: scale(1.05);
 }
 
 /* NAVIGATION */
@@ -25,17 +35,21 @@ a:hover {
   padding: 0.5em;
 }
 
+.navbar-default .navbar-brand {
+  color: var(--main-text-color);
+}
+
 .navbar-default, .navbar-brand {
-  background-color: #1E201D;
+  background-color: var(--secondary-background-color);
   font-size: 1.5em;
 }
 
 .navbar.navbar-default li a, .navbar.navbar-default a {
-  color: #85A985;
+  color: var(--secondary-text-color);
 }
 
 .navbar.navbar-default li a:hover, .navbar.navbar-default a:hover {
-  color: #85A985;
+  color: var(--main-text-color);
 }
 
 .btn-default {
@@ -58,13 +72,12 @@ a:hover {
 }
 
 .icon {
-  color: hsl(160, 20%, 50%);
   -webkit-transition: color 2s, transform 3s;
   transition: color 2s, transform 3s;
 }
 
 .icon:hover {
-  color: white;
+  color: var(--main-text-color);
   transform: scale(1.1);
 }
 
@@ -80,11 +93,10 @@ a:hover {
   height: 80%;
   min-height: 80%;
   overflow: hidden;
-  background-image: url("img/background.jpeg");
-  background-size: 100%;
+  background-image: url("img/background.jpg");
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: black;
 }
 
@@ -92,41 +104,91 @@ a:hover {
   width: 80%;
   margin: auto;
   margin-top: 20%;
-  color: #6F90A2;
+}
+
+#aboutMeContainer h1, .icon {
+  color: white;
 }
 
 #mission {
-  background: linear-gradient(45deg, hsl(155, 20%, 52%), hsl(165, 60%, 52%));
+  background-color: var(--primary-background-color);
   padding: 1em;
 }
 
 #mission p {
   font-size: 2em;
-  color: white;
+  color: var(--main-text-color);
   width: 60%;
   margin: auto;
   padding: 1em;
 }
 
 #awardsPage {
-  background: linear-gradient(45deg, hsl(165, 50%, 52%), hsl(155, 20%, 52%));
+  background: var(--secondary-background-color);
 }
 
 #portfolioPage {
-  background: linear-gradient(45deg, hsl(155, 20%, 52%), hsl(165, 60%, 52%));
+  background: var(--primary-background-color);
   margin: auto;
   padding: 4em;
-  color: white;
+  color: var(--third-text-color);
 }
 
 #portfolioPage p {
   height: 1em;
 }
 
+#projectContainer {
+  margin: auto;
+  overflow: hidden;
+  max-width: 70em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+.imgContainer {
+  width: var(--img-width);
+  height: var(--img-height);
+  margin: 0.5em;
+  overflow: hidden;
+  border-radius: 1em;
+  border-color: #477187;
+  border-style: solid;
+  border-width: 0.1em;
+  transition: opacity 0.5s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgContainer:hover {
+  opacity: 0.9;
+}
+
+#projImg1 {
+  background-image: url("https://images.unsplash.com/photo-1521490918262-b83aee4029e7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=145819d18139f5d3144e15d947fc94b2&auto=format&fit=crop&w=632&q=80");
+}
+#projImg2 {
+  background-image: url("https://solarsystem.nasa.gov/system/people/detail_images/660_270946main_CarlSagan_20080903-browse.jpg");
+}
+#projImg3 {
+  background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2017/58af0228b8aa8.jpg");
+}
+
+
+.imgText {
+  position: relative;
+  font-size: 1.5em;
+  color: var(--secondary-text-color);
+  top: 10%;
+  background-color: var(--secondary-background-color);
+}
+
+
 #tutorialPage {
-  background: linear-gradient(45deg, hsl(165, 50%, 52%), hsl(155, 20%, 52%));
+  background: var(--secondary-background-color);
   padding: 4em;
-  color: white;
+  color: var(--third-text-color);
 }
 
 #contactMePage {
@@ -135,8 +197,8 @@ a:hover {
   min-height: 40%;
   margin: auto;
   padding: 4em;
-  color: white;
-  background: linear-gradient(45deg, hsl(155, 70%, 5%), hsl(165, 50%, 32%));
+  color: var(--third-text-color);
+  background: var(--primary-background-color);
 }
 
 /* BADGES */
@@ -170,6 +232,9 @@ a:hover {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+  .navbar {
+    display: none;
+  }
   #aboutMePage {
     display: none;
   }
@@ -188,7 +253,9 @@ a:hover {
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-
+  .navbar {
+    display: none;
+  }
   #aboutMePage {
     display: none;
   }
