@@ -9,67 +9,250 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/javascript.js"></script> 
 </header>
 
 <main class="text-center"> 
   <!-- navigation -->
   <!-- about me page -->
-  <div class="container-fluid page" id="aboutMePage">
-    <div class="row text-left" id="aboutMeContainer">
+  <div class="container-fluid page" id="about_me_container">
+    <div class="row text-left" id="about_me">
       <div id="title">
-        <h1><strong>Derek Fermaint</strong></h1>
-        <h3>My passion is solving problems, and I'm at my best when contributing within a team to overcome a seemingly impossible challenge.</h3>
-        <h4> -- Java, C++, Python, R</h4>
-        <p></p>
+        <div class="grid-column-1" id="title_img">
+          <img src="css/img/profile_pic.jpg" id="profile_pic">
+        </div>
+        <div class="grid-column-2" id="title_desc">
+          <h1><strong>Derek Fermaint</strong></h1>
+          <span>Software Engineer</span>
+        </div>
       </div>
 
 	  <!-- projects -->
-   	  <div id="links">
-      	<h2><strong>Academic Projects</strong></h2>
-      	<ul>
-      		<li><a href="https://www.scribd.com/document/398484361/Trinomial-Tiling" target="_blank">Trinomial Tiling - Honors Maths Proof Paper</a></li>
-      		<li><a href="https://www.scribd.com/document/398484584/Modeling-System-Influence-with-MATLAB" target="_blank">Modeling System Influence with MATLAB - Honors Linear Algebra Paper</a></li>
-      		<li><a href="https://www.scribd.com/document/398484120/We-Choose-to-Go-to-the-Moon" target="_blank">We Choose to Go to the Moon - Honors Philosophy of Logic Paper</a></li>
-      	</ul>
+   	  <div class="container">
+        <div class="wrapper">
+      	<div class="collapsible"><h2 class="pound">#</h2><h2>Projects</h2></div>
+          <div class="content">
+      		<div class="a_project">
+            <a href="https://codepen.io/dataspective/pen/aEZRGM" target="_blank">Carl Sagan Quote Generator</a><br>
+            <span>Program to provide random, tweetable quotes.</span><br>
+            <span class="skill">{HTML, CSS, Javascript}</span>
+          </div>  
+          <div class="a_project">
+            <a href="https://codepen.io/dataspective/pen/WdGpXe" target="_blank">Weather App</a><br>
+            <span>Uses weather api to provide user their local weather data</span><br>
+            <span class="skill">{HTML, CSS, Javascript, JSON}</span>
+          </div>  
+          <div class="a_project">
+            <a href="https://codepen.io/dataspective/pen/opzrGb" target="_blank">Wikipedia Search Engine</a><br>
+            <span>Provides user with Wikipedia articles that have been searched for.</span><br>
+            <span class="skill">{HTML, CSS, Javascript}</span>
+          </div>
+          <div class="a_project">
+            <a href="https://github.com/dataspective/SpringCloudConfigServer" target="_blank">Java Spring Cloud Config Server</a><br>
+            <span>A simple prototype of a Java Spring Config server. Built to demonstrate microservice architecture.</span><br>
+            <span class="skill">{Java, Spring, XML}</span>
+          </div>
+          <div class="a_project">
+            <a href="https://github.com/dataspective/Python-Pong" target="_blank">Pong</a><br>
+            <span>A basic game of pong. Built during Coursera data science course.</span><br>
+            <span class="skill">{Python}</span>
+          </div>
+          <div class="a_project">
+            <a href="https://github.com/dataspective/bmp_file_inverter" target="_blank">BMP File Converter</a><br>
+            <span>Program to take a .bmp file and transform the data by flipping it.</span><br>
+            <span class="skill">{C}</span>
+          </div>
+          <div class="a_project">
+            <a href="https://github.com/dataspective/Stadium-Seating" target="_blank">Stadium Seating Calculator</a><br>
+            <span>Simple program for pricing calculations. Built to demonstrate proper use of ASP.Net</span><br>
+            <span class="skill"> {ASP.Net, HTML, Visual Basic}</span>
+          </div>
+          <div class="a_project">
+            <a href="http://jsfiddle.net/datakicker/54xLg/" target="_blank">Sketch Pad Prototype</a><br>
+            <span>A multi-color sketch pad.</span><br>
+            <span class="skill">{HTML, CSS, Javascript, jQuery}</span>
+          </div>
+          <div class="a_project">
+            <a href="https://www.scribd.com/document/398484361/Trinomial-Tiling" target="_blank">Trinomial Tiling - Honors Maths Proof Paper</a><br>
+            <span>Mathematical Structures honors paper demonstrating the induction proof by solving multiple polyomino problems.</span><br>
+            <span class="skill">{Maths, Academic Writing}</span>
+          </div>
+          <div class="a_project">
+            <a href="https://www.scribd.com/document/398484584/Modeling-System-Influence-with-MATLAB" target="_blank">Modeling System Influence with MATLAB - Honors Linear Algebra Paper</a><br>
+            <span>Linear Algebra honors paper to observe a simple system of nodes and networks.</span><br>
+            <span class="skill">{Maths, Academic Writing}</span>
+          </div>
+          <div class="a_project">
+            <a href="https://www.scribd.com/document/398484120/We-Choose-to-Go-to-the-Moon" target="_blank">We Choose to Go to the Moon - Honors Philosophy of Logic Paper</a><br>
+            <span>Philosophy of Logic honors paper that provides a logical analysis of a speech I really admire.</span><br>
+            <span class="skill">{Maths, Academic Writing}</span>
+          </div>
+          <div class="a_project">
+            <a href="https://github.com/dataspective/hacker_rank" target="_blank">Hacker Rank Challenges</a><br>
+            <span>Collection of solved Hacker Rank challenges.</span><br>
+            <span class="skill">{Java}</span>
+          </div>  
+          <div class="a_project">
+            <a href="https://github.com/dataspective/javascript_functions" target="_blank">Javascript Function Solves</a><br>
+            <span>Collection of different JS functions. Solved during FreeCodeCamp front end course.</span><br>
+            <span class="skill">{Javascript}</span>
+          </div>  
+          <div class="a_project">
+            <a href="https://github.com/dataspective/ProjectEuler" target="_blank">Project Euler Challenges</a><br>
+            <span>Collection of solutions from the computational challenges at Project Euler.</span><br>
+            <span class="skill">{Java}</span>
+          </div>
+        </div>  		
       </div>
-
-
-	  <!-- links -->
-   	  <div id="links">
-      	<h2><strong>Links</strong></h2>
-      	<a href="https://www.linkedin.com/in/derekfermaint/" target="_blank">LinkedIn</a><br>
-      	<a href="https://github.com/dataspective" target="_blank">Github</a><br>
-      	<a href="https://codepen.io/dataspective/" target="_blank">Codepen</a><br>
-      	<a href="https://medium.com/@dataspective" target="_blank">Medium</a><br>
-      	<a href="https://twitter.com/dataspective" target="_blank">Twitter</a><br>
-      </div>
-	  
-	  <!-- quotes -->
-      <div id="quotes">
-      	<h2><strong>Quotes</strong></h2>
-      	<p><strong>"</strong> I had the honor to work with Derek at the NASA NCAS robot competition. Derek has seemingly endless amounts of energy and enthusiasm that he puts into all aspects of a project. He has excellent verbal communication skills, is extremely organized and is able to effectively multitask to ensure the project is completed on time. He has openness and understanding that makes him flexible when changes occur, objectively discussing new options. Finally, besides completing his primary job, he is a great team player; he gave the resources and support others needed to complete their tasks. <strong>"</strong> 
-      		<br><span class="quote">- <a href="https://www.linkedin.com/in/ethan-lew-93342710a/" target="_blank">Ethan Lew, Electrical Engineer, Portland State University</a><span></p>
-
-      	<p><strong>"</strong> I am very grateful for the opportunity to work with Derek in the NASA Community College Aerospace Scholar on site workshop/robotics competition. My first interactions with Derek we’re via our group emails and discussion board. I immediately felt kindred to his love of prioritizing tasks and staying focused on the goal. I knew working with him would be seamless because he tuned right into what we needed to get accomplished to be the very best. He was always willing to put in the time and effort to help our team succeed. Beyond being incredibly talented and smart, he was so very relatable. He worked just as hard to stay sincere with his peers, and offer heartfelt encouragement. The entire time he was opened to and encouraged feedback and was dedicated to growing from it. He will no doubt be an incredible asset to any team. <strong>"</strong> 
-      		<br><span class="quote">- <a href="https://www.linkedin.com/in/erinmomany/" target="_blank">Erin Momany, Industrial Engineer, University of Minnesota</a></span></p>
-
-      	<p><strong>"</strong> Derek Fermaint was a student in my Introduction to Logic class, PHI103. He consistently did A+ work, receiving near perfect scores for all of his written work. In addition, Derek submitted an Honors paper that was outstanding and far beyond what was required. He wrote and gave an oral presentation of an in-depth analysis of John F. Kennedy’s “Race to the Moon” speech and it was one of the most thorough and interesting honors project that I have had the pleasure to read. 
-      	<br>Derek is singularly committed to academic scholarship and has a boundless curiosity. As a member of my logic class, he was always prepared and engaged. His contributions to in-class discussions were particularly thoughtful and intelligent. I do not think this was just because of his interest in logic, but I am sure that Derek puts that extra effort into all of his interests. That is the type of young man he is.
-      	<br>On a more personal note, on the occasions when Derek visited me during my office hours, he was congenial, interesting, and composed. He certainly has a maturity level beyond his years and the necessary intelligence and commitment to succeed at whatever he undertakes. So, I am happy to give my highest recommendation for Derek, as I am sure he will excel in all his future endeavors! <strong>"</strong>
-      	<br><span class="quote"> - <a href="https://www.linkedin.com/in/debra-j-campbell-ph-d-37379611/" target="_blank">Debra J. Campbell, Ph.D. and Professor of Philosophy, Mesa Community College</a></span></p>
-
-      	<p><strong>"</strong> Derek took on great responsibility as the mechanical systems admin, and made great improvements to the surveying process by creating and implementing various efficiency methods. He was great at managing technicians and his exemplary work ethic really made a difference for the company.<strong>"</strong>
-      	<br><span class="quote"> - <a href="https://www.linkedin.com/in/bryan-decelles-009a2a91/" target="_blank">Bryan DeCelles, Mechanical Engineer, AeroSpec, Inc.</a></span></p>
-
-      </div>
-
-
-
     </div>
 
+    <!-- Industry Experience -->
+      <div class="container">
+        <div class="wrapper">
+          <div class="collapsible"><h2 class="pound">#</h2><h2>Experience</h2></div>
+          <div class="content">
+            <div class="a_project">
+            <h3>Quality Assurance Analyst</h3>
+            <span>PlusQA - tested on multiple platforms and devices while coordinating with Airbnb developers through the JIRA ticketing system.</span><br>
+            <span class="skill">{JIRA, iOS, Android, Windows, MacOS, Functionality Testing, Accessibility Testing, Compatibility Testing}</span>
+          </div>
+          <div class="a_project">
+            <h3>Software Engineering Intern</h3>
+            <span>K12 - built a Java Spring config server in order to test the microservice architecture against the current monolithic system.</span><br>
+            <span class="skill">{Git, Java, Spring, Scrum, Python}</span>
+          </div>
+          <div class="a_project">
+            <h3>Computer Science Tutor</h3>
+            <span>MCC - became a certified CRLA tutor in order to teach students over multiple topics.</span><br>
+            <span class="skill">{Java, C, C++, Visual Basic, .NET, Javascript, Python, Assembly Language, Calculus I-III, Differential Equations, Linear Algebra, Leadership}</span>
+          </div>
+          <div class="a_project">
+            <h3>Systems Engineer</h3>
+            <span>Global Data Specialists - junior developer responsible for end-to-end solutions. Participated in design meetings, coding and on-site implementation.</span><br>
+            <span class="skill">{.NET, SCADA, Visual Basic, HTML, CSS, Javascript}</span>
+          </div>
+          <div class="a_project">
+            <h3>Mechanical Systems Administrator</h3>
+            <span>Intel Corporation - responsible for daily performance of team of 10 technicians to carry out design specifications. Participated in design meetings with mechanical engineers to troubleshoot systems.</span><br>
+            <span class="skill">{Technical Writing, Excel, Leadership}</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Awards & Leadership -->
+      <div class="container">
+        <div class="wrapper">
+          <div class="collapsible"><h2 class="pound">#</h2><h2>Awards & Leadership</h2></div>
+          <div class="content">
+            <div class="a_project">
+              <h3>1st Place - NASA Robot Competition</h3>
+              <span>Selected out of 2,000 applicants to compete at NASA's Armstrong Flight Research Center against 3 competing teams. We won first place in the competition that included 3 robot builds and a formal presentation in front of NASA researchers.</span><br>
+              <span class="skill">{Ladder Logic, Project Management, Team Building, Public Speaking}</span>
+            </div>
+            <div class="a_project">
+              <h3>Jack Kent Cooke Scholar</h3>
+              <span>Highly competitive national full-ride university scholarship awarded to exceptionally promising students with financial need.</span><br>
+              <span class="skill">{Leadership, Academic Writing}</span>
+            </div>
+            <div class="a_project">
+              <h3>Industry Chair</h3>
+              <span>Served on the Chair for the Software Developers Association at ASU and collaborated with Uber to sponsor the first hackathon at ASU. Also served as a mentor during the hackathon for freshman teams.</span><br>
+              <span class="skill">{Leadership, Entreprenurship, Java, C++}</span>
+            </div>
+            <div class="a_project">
+              <h3>ASU Barrett Honors Scholar</h3>
+              <span>Selective residential university honors college dedicated to supporting academically outstanding undergraduates.</span><br>
+              <span class="skill">{Leadership, Critical Thought, Academic Writing}</span>
+            </div>
+            <div class="a_project">
+              <h3>MCC Engineering Club President</h3>
+              <span>Elected and served the club to bring in engineering professionals as mentors for students.</span><br>
+              <span class="skill">{Leadership}</span>
+            </div>
+            <div class="a_project">
+              <h3>Honors In Action Officer</h3>
+              <span>Elected and completed a service project by coordinating with UN-Water.</span><br>
+              <span class="skill">{Leadership, Project Management}</span>
+            </div>
+            <div class="a_project">
+              <h3>LeaderShape Institute Graduate</h3>
+              <span>Selected by the council of Student Leadership at MCC to participate in a week-long retreat focused on leadership, team-building and creating a vision for the future.</span><br>
+              <span class="skill">{Leadership}</span>
+            </div>
+            <div class="a_project">
+              <h3>Global Leadership Retreat Graduate</h3>
+              <span>Selected by the council of Student Leadership at MCC to participate in a weekend-long retreat focused on communication conflict resolution in a multi-cultural setting.</span><br>
+              <span class="skill">{Leadership}</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
+<!-- Education and Certifications -->
+      <div class="container">
+        <div class="wrapper">
+          <div class="collapsible"><h2 class="pound">#</h2><h2>Education & Certifications</h2></div>
+          <div class="content">
+            <div class="a_project">
+              <h3>Software Engineering, B.S.</h3>
+              <span>In progress - Arizona State University</span><br>
+            </div>
+            <div class="a_project">
+              <h3>Associate's Degree with High Distinction</h3>
+              <span>4.0 GPA - Mesa Community College</span><br>
+            </div>
+            <div class="a_project">
+              <h3>Metadata: Organizing and Discovering Information Certification</h3>
+              <span>University of North Carolina at Chapel Hill</span><br>
+            </div>
+            <div class="a_project">
+              <h3>Spring Boot Certification</h3>
+                <span>Udemy - Dan Vega</span><br>
+            </div>
+            <div class="a_project">
+              <h3>CRLA Certification</h3>
+              <span>College Reading & Learning Association</span><br>
+            </div>
+            <div class="a_project">
+              <h3>QuickScript Applications Certification</h3>
+              <span>WonderWare</span><br>
+            </div>
+          </div>
+        </div>
+      </div>
 
+	  <!-- contact -->
+   	  <div class="container">
+        <div class="wrapper">
+          <div class="collapsible"><h2 class="pound">#</h2><h2>Contact</h2></div>
+          <div class="content">
+          <div class="a_project">
+            <h3>
+              <a href="https://www.linkedin.com/in/derekfermaint/" target="_blank">LinkedIn
+              </a>
+            </h3>
+            <h3>
+              <a href="https://github.com/dataspective" target="_blank">Github
+              </a>
+            </h3>
+            <h3>
+            <a href="https://codepen.io/dataspective/" target="_blank">Codepen
+            </a>
+          </h3>
+          <h3>
+            <a href="https://medium.com/@dataspective" target="_blank">Medium
+            </a>
+          </h3>
+          <h3>
+            <a href="https://twitter.com/dataspective" target="_blank">Twitter
+            </a>
+          </h3>   
+          </div>
+          </div>     
+        </div>
+      </div>
+<!-- end -->
   </div>
 </main>
+
+<script type="text/javascript" src="javascript.js"></script> 
