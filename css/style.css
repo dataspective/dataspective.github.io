@@ -74,6 +74,7 @@ a:hover {
   width: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 #title {
@@ -122,6 +123,7 @@ a:hover {
 
 .container {
   background-color: var(--secondary-background-color);
+  text-align: left;
   width: 70%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -131,7 +133,6 @@ a:hover {
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
-  //border-radius: 25px;
   overflow: hidden;
 }
 
@@ -238,6 +239,18 @@ a:hover {
   padding: 0;
 }
 
+#bottom_text {
+  margin: auto;
+  text-align: center;
+  color: var(--third-text-color);
+  font-size: 60%;
+  margin-bottom: 10%;
+}
+
+#bottom_text a {
+  color: var(--primary-text-color);
+}
+
 /* MEDIA */
 
 /* ----------- Small browsers ------------ */
@@ -292,6 +305,14 @@ a:hover {
     width: 568px;
     margin-left: 20px;
     border-radius: 0px;
+  }
+
+  #about_me {
+    text-align: left;
+  }
+
+  #bottom_text {
+    margin-left: 25px;
   }
 }
 
