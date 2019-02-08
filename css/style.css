@@ -240,17 +240,6 @@ a:hover {
   padding: 0;
 }
 
-#bottom_text {
-  margin: auto;
-  text-align: center;
-  color: var(--third-text-color);
-  font-size: 60%;
-  margin-bottom: 10%;
-}
-
-#bottom_text a {
-  color: var(--primary-text-color);
-}
 
 /* MEDIA */
 
